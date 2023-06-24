@@ -19,10 +19,10 @@ const App = () => {
     setIsLoading(false);
     setPhoto(data);
   };
-  function handleChange(event) {
-    let value = event.target.value;
-    fetchApi(value);
-  }
+
+  const handleChange = (event) => {
+    fetchApi(event.target.value);
+  };
 
   return (
     <div id="main">
